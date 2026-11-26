@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMMAH'S Beauty Lounge | Luxury Beauty Salon in Rawalpindi</title>
+  <meta name="description" content="Discover IMMAH'S Beauty Lounge in Phase 7 Rawalpindi. Explore a world of beauty, elegance, and self-care. Connect with us to plan your beauty experience." />
+  <meta property="og:title" content="IMMAH'S Beauty Lounge | Luxury Beauty Salon in Rawalpindi" />
+  <meta property="og:description" content="Discover IMMAH'S Beauty Lounge in Phase 7 Rawalpindi. Explore a world of beauty, elegance, and self-care." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Cormorant Garamond & Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#F9F6F0',
+            cream: '#F1E9DD',
+            espresso: '#2B211D',
+            mocha: '#71574A',
+            champagne: '#C6A56B',
+            rose: '#D9B7AE',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Manrope"', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Structured Data (Verified Business Info Only) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "IMMAH'S Beauty Lounge",
+    "telephone": "+92515707144",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Wallayat Complex, Opp. China Center, Phase 7",
+      "addressLocality": "Rawalpindi",
+      "postalCode": "46000",
+      "addressCountry": "PK"
+    },
+    "sameAs": [
+      "https://www.instagram.com/immahbeautylounge/"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "reviewCount": "96"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --ivory: #F9F6F0;
+      --cream: #F1E9DD;
+      --espresso: #2B211D;
+      --mocha: #71574A;
+      --champagne: #C6A56B;
+      --rose: #D9B7AE;
+    }
+
+    body {
+      background-color: var(--ivory);
+      color: var(--espresso);
+      font-family: 'Manrope', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Subtle Atelier Paper Grain */
+    .paper-grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 40;
+      opacity: 0.028;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+    /* Editorial Scroll Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Hero Image Reveal */
+    .hero-image-reveal {
+      animation: heroZoom 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    @keyframes heroZoom {
+      from {
+        opacity: 0.4;
+        transform: scale(1.06);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal, .hero-image-reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F9F6F0;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C6A56B;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-[#C6A56B]/25 selection:text-[#2B211D]">
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <!-- =====================================================================
+       SECTION 1: STICKY NAVIGATION BAR
+  ====================================================================== -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent border-b border-transparent">
+    <div class="max-w-[1380px] mx-auto px-6 md:px-12 h-20 md:h-24 flex items-center justify-between">
+      <!-- Brand Wordmark -->
+      <a href="#home" class="group flex flex-col">
+        <span class="font-serif text-xl md:text-2xl tracking-[0.18em] uppercase text-espresso font-normal">
+          IMMAH'S
+        </span>
+        <span class="text-[9px] tracking-[0.34em] uppercase text-mocha -mt-1 group-hover:text-champagne transition-colors">
+          Beauty Lounge
+        </span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav aria-label="Primary Navigation" class="hidden lg:flex items-center space-x-10 text-[12px] font-medium tracking-[0.2em] uppercase text-espresso">
+        <a href="#home" class="hover:text-champagne transition-colors py-1">Home</a>
+        <a href="#about" class="hover:text-champagne transition-colors py-1">About</a>
+        <a href="#services" class="hover:text-champagne transition-colors py-1">Services</a>
+        <a href="#gallery" class="hover:text-champagne transition-colors py-1">Gallery</a>
+        <a href="#reviews" class="hover:text-champagne transition-colors py-1">Reviews</a>
+        <a href="#contact" class="hover:text-champagne transition-colors py-1">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA & Mobile Trigger -->
+      <div class="flex items-center space-x-4">
+        <button
+          type="button"
+          onclick="openBookingDrawer('General Appointment')"
+          class="hidden sm:inline-flex items-center justify-center px-6 py-3 bg-champagne text-white text-[11px] font-semibold tracking-[0.22em] uppercase hover:bg-espresso transition-colors duration-300 cursor-pointer"
+        >
+          Book An Appointment
+        </button>
+
+        <!-- Animated Hamburger -->
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          aria-label="Toggle Menu"
+          aria-expanded="false"
+          onclick="toggleMobileMenu()"
+          class="lg:hidden w-10 h-10 flex flex-col items-center justify-center space-y-1.5 text-espresso focus:outline-none"
+        >
+          <span id="bar-1" class="block w-6 h-[1.5px] bg-espresso transition-transform duration-300"></span>
+          <span id="bar-2" class="block w-6 h-[1.5px] bg-espresso transition-opacity duration-300"></span>
+          <span id="bar-3" class="block w-6 h-[1.5px] bg-espresso transition-transform duration-300"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-ivory border-t border-espresso/10 px-6 py-10 shadow-xl">
+      <nav class="flex flex-col space-y-6 text-center">
+        <a href="#home" onclick="closeMobileMenu()" class="font-serif text-2xl tracking-[0.12em] uppercase text-espresso hover:text-champagne">Home</a>
+        <a href="#about" onclick="closeMobileMenu()" class="font-serif text-2xl tracking-[0.12em] uppercase text-espresso hover:text-champagne">About</a>
+        <a href="#services" onclick="closeMobileMenu()" class="font-serif text-2xl tracking-[0.12em] uppercase text-espresso hover:text-champagne">Services</a>
+        <a href="#gallery" onclick="closeMobileMenu()" class="font-serif text-2xl tracking-[0.12em] uppercase text-espresso hover:text-champagne">Gallery</a>
+        <a href="#reviews" onclick="closeMobileMenu()" class="font-serif text-2xl tracking-[0.12em] uppercase text-espresso hover:text-champagne">Reviews</a>
+        <a href="#contact" onclick="closeMobileMenu()" class="font-serif text-2xl tracking-[0.12em] uppercase text-espresso hover:text-champagne">Contact</a>
+        <div class="pt-4 border-t border-espresso/10">
+          <button
+            type="button"
+            onclick="closeMobileMenu(); openBookingDrawer('General Appointment')"
+            class="w-full py-4 bg-champagne text-white text-xs font-semibold tracking-[0.22em] uppercase hover:bg-espresso transition-colors"
+          >
+            Book An Appointment
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- =====================================================================
+         SECTION 2: ASYMMETRIC EDITORIAL HERO
+    ====================================================================== -->
+    <section id="home" class="relative min-h-screen pt-28 pb-20 md:pt-36 md:pb-28 bg-ivory flex items-center">
+      <div class="max-w-[1380px] mx-auto px-6 md:px-12 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+          <!-- Editorial Copy Column -->
+          <div class="lg:col-span-6 space-y-8 reveal visible">
+            <div class="flex items-center space-x-4">
+              <span class="h-[1px] w-10 bg-champagne"></span>
+              <span class="text-[11px] font-medium tracking-[0.32em] uppercase text-mocha">
+                Your Beauty, Our Passion
+              </span>
+            </div>
+
+            <h1 class="font-serif text-5xl sm:text-6xl xl:text-[74px] font-light leading-[1.06] tracking-[-0.01em] text-espresso">
+              Where Beauty <br class="hidden sm:block" />
+              Meets <span class="italic font-normal text-mocha">Elegance.</span>
+            </h1>
+
+            <p class="text-base md:text-lg text-mocha font-light leading-relaxed max-w-xl">
+              Discover a world of beauty, confidence, and self-care at IMMAH'S Beauty Lounge. Experience beauty services designed to make you feel effortlessly extraordinary.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+              <a
+                href="#services"
+                class="inline-flex items-center justify-center px-8 py-4 bg-espresso text-ivory text-xs font-semibold tracking-[0.22em] uppercase hover:bg-champagne transition-colors duration-300"
+              >
+                Explore Our Services
+              </a>
+              <button
+                type="button"
+                onclick="openBookingDrawer('Your Beauty Experience')"
+                class="inline-flex items-center justify-center px-8 py-4 border border-espresso/30 bg-transparent text-espresso text-xs font-semibold tracking-[0.22em] uppercase hover:border-champagne hover:bg-champagne hover:text-white transition-all duration-300 cursor-pointer"
+              >
+                Book Your Experience
+              </button>
+            </div>
+
+            <!-- Subtle Location Stamp -->
+            <div class="pt-6 border-t border-espresso/10 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs tracking-[0.16em] uppercase text-mocha">
+              <span>Phase 7, Rawalpindi</span>
+              <span class="text-champagne">•</span>
+              <a href="tel:+92515707144" class="hover:text-espresso transition-colors">051 5707144</a>
+            </div>
+          </div>
+
+          <!-- Editorial Framed Visual Column -->
+          <div class="lg:col-span-6 relative">
+            <div class="relative p-3 sm:p-5 border border-champagne/40 bg-white">
+              <div class="overflow-hidden aspect-[4/5] bg-cream">
+                <img
+                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1400&q=85"
+                  alt="Editorial beauty portrait in warm champagne and ivory tones at IMMAH'S Beauty Lounge"
+                  class="w-full h-full object-cover hero-image-reveal"
+                />
+              </div>
+              <!-- Editorial Corner Caption -->
+              <div class="mt-4 flex items-center justify-between text-[10px] tracking-[0.26em] uppercase text-mocha">
+                <span>IMMAH'S Atelier — Rawalpindi</span>
+                <span class="text-champagne">Est. Luxury Sanctuary</span>
+              </div>
+            </div>
+            <!-- Decorative Rose Accent Line -->
+            <div class="hidden md:block absolute -bottom-5 -left-5 w-28 h-28 border-l border-b border-rose pointer-events-none" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 3: TRUST & REPUTATION
+    ====================================================================== -->
+    <section aria-label="Salon Reputation" class="bg-cream border-y border-espresso/10 py-14 md:py-16">
+      <div class="max-w-[1200px] mx-auto px-6 md:px-12 reveal">
+        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-espresso/15 text-center">
+          <div class="py-6 md:py-2 px-6">
+            <p class="font-serif text-4xl md:text-5xl text-espresso font-normal">
+              4.6 <span class="text-2xl text-mocha">/ 5</span>
+            </p>
+            <p class="mt-2 text-[11px] font-medium tracking-[0.28em] uppercase text-mocha">
+              Google Rating
+            </p>
+          </div>
+
+          <div class="py-6 md:py-2 px-6">
+            <p class="font-serif text-4xl md:text-5xl text-espresso font-normal">
+              96
+            </p>
+            <p class="mt-2 text-[11px] font-medium tracking-[0.28em] uppercase text-mocha">
+              Customer Reviews
+            </p>
+          </div>
+
+          <div class="py-6 md:py-2 px-6 flex flex-col justify-center">
+            <p class="font-serif text-2xl md:text-3xl tracking-[0.12em] uppercase text-espresso">
+              IMMAH'S Beauty Lounge
+            </p>
+            <p class="mt-2 text-[11px] font-medium tracking-[0.28em] uppercase text-champagne">
+              Phase 7 • Rawalpindi
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 4: ABOUT THE SALON
+    ====================================================================== -->
+    <section id="about" class="py-24 md:py-36 bg-ivory">
+      <div class="max-w-[1380px] mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-16 items-center">
+          <!-- Asymmetric Interior Photography -->
+          <div class="lg:col-span-6 order-2 lg:order-1 reveal">
+            <div class="relative">
+              <div class="bg-white p-3 sm:p-4 border border-espresso/10">
+                <div class="overflow-hidden aspect-[4/5]">
+                  <img
+                    src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=85"
+                    alt="Warm, minimalist luxury salon interior at IMMAH'S Beauty Lounge"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              </div>
+              <div class="hidden sm:block absolute -top-4 -right-4 w-24 h-24 border-t border-r border-champagne pointer-events-none" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- Editorial Story -->
+          <div class="lg:col-span-6 order-1 lg:order-2 space-y-8 reveal">
+            <div class="flex items-center space-x-4">
+              <span class="h-[1px] w-10 bg-champagne"></span>
+              <span class="text-[11px] font-medium tracking-[0.3em] uppercase text-mocha">
+                The Sanctuary
+              </span>
+            </div>
+
+            <h2 class="font-serif text-4xl sm:text-5xl lg:text-[56px] font-light leading-[1.12] text-espresso">
+              Beauty Is An Art. <br />
+              <span class="italic text-mocha">Let Us Make It Yours.</span>
+            </h2>
+
+            <p class="text-base md:text-lg text-mocha font-light leading-relaxed">
+              At IMMAH'S Beauty Lounge, beauty is more than a service — it's an experience. We believe every woman deserves to feel confident, beautiful, and special. Our beauty lounge is dedicated to creating an atmosphere where elegance meets care and every visit feels like a moment of indulgence.
+            </p>
+
+            <div class="pt-2">
+              <a
+                href="#services"
+                class="inline-flex items-center space-x-4 px-8 py-4 border border-espresso text-espresso text-xs font-semibold tracking-[0.22em] uppercase hover:bg-espresso hover:text-ivory transition-colors duration-300"
+              >
+                <span>Discover Our World</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 5: BEAUTY SERVICES (6 EDITABLE CARDS)
+    ====================================================================== -->
+    <section id="services" class="py-24 md:py-36 bg-cream border-t border-espresso/10">
+      <div class="max-w-[1380px] mx-auto px-6 md:px-12">
+        <!-- Section Header -->
+        <div class="max-w-2xl mx-auto text-center space-y-5 mb-20 reveal">
+          <span class="inline-block text-[11px] font-medium tracking-[0.32em] uppercase text-champagne">
+            Curated Experiences
+          </span>
+          <h2 class="font-serif text-4xl sm:text-5xl lg:text-[56px] font-light text-espresso leading-tight">
+            Our Beauty Experiences
+          </h2>
+          <p class="text-base md:text-lg text-mocha font-light">
+            Thoughtfully curated beauty experiences to bring out your natural elegance.
+          </p>
+        </div>
+
+        <!-- Services Grid (Rendered from SALON_CONFIG.services) -->
+        <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"></div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 6: LUXURY IMAGE GALLERY + LIGHTBOX
+    ====================================================================== -->
+    <section id="gallery" class="py-24 md:py-36 bg-ivory">
+      <div class="max-w-[1380px] mx-auto px-6 md:px-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16 reveal">
+          <div class="space-y-4">
+            <span class="inline-block text-[11px] font-medium tracking-[0.32em] uppercase text-champagne">
+              Visual Lookbook
+            </span>
+            <h2 class="font-serif text-4xl sm:text-5xl lg:text-[56px] font-light text-espresso leading-tight">
+              A Glimpse of Beauty
+            </h2>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div id="gallery-filters" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div id="gallery-masonry" class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6"></div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 7: WHY CHOOSE US
+    ====================================================================== -->
+    <section class="py-24 md:py-32 bg-cream border-y border-espresso/10">
+      <div class="max-w-[1380px] mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto space-y-4 mb-20 reveal">
+          <span class="inline-block text-[11px] font-medium tracking-[0.32em] uppercase text-champagne">
+            The IMMAH'S Standard
+          </span>
+          <h2 class="font-serif text-4xl sm:text-5xl font-light text-espresso">
+            Your Beauty Deserves the Best.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-white p-8 md:p-10 border border-espresso/10 space-y-5 reveal">
+            <div class="w-11 h-11 flex items-center justify-center border border-champagne/50 text-champagne">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-2xl text-espresso font-normal">A Beautiful Experience</h3>
+            <p class="text-sm text-mocha font-light leading-relaxed">
+              Enjoy a welcoming and elegant beauty environment.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="bg-white p-8 md:p-10 border border-espresso/10 space-y-5 reveal">
+            <div class="w-11 h-11 flex items-center justify-center border border-champagne/50 text-champagne">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-2xl text-espresso font-normal">Attention to Detail</h3>
+            <p class="text-sm text-mocha font-light leading-relaxed">
+              Every experience is designed with care and attention.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="bg-white p-8 md:p-10 border border-espresso/10 space-y-5 reveal">
+            <div class="w-11 h-11 flex items-center justify-center border border-champagne/50 text-champagne">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-2xl text-espresso font-normal">Beauty &amp; Confidence</h3>
+            <p class="text-sm text-mocha font-light leading-relaxed">
+              Feel confident, refreshed, and beautiful.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="bg-white p-8 md:p-10 border border-espresso/10 space-y-5 reveal">
+            <div class="w-11 h-11 flex items-center justify-center border border-champagne/50 text-champagne">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+            </div>
+            <h3 class="font-serif text-2xl text-espresso font-normal">A Personal Touch</h3>
+            <p class="text-sm text-mocha font-light leading-relaxed">
+              An experience that celebrates your individual beauty.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 8: CUSTOMER REVIEWS (VERIFIED GOOGLE RATING ONLY)
+    ====================================================================== -->
+    <section id="reviews" class="py-24 md:py-32 bg-ivory">
+      <div class="max-w-[960px] mx-auto px-6 md:px-12 text-center reveal">
+        <div class="bg-white border border-espresso/10 px-8 py-14 sm:p-16 relative">
+          <div class="w-12 h-[1px] bg-champagne mx-auto mb-6"></div>
+          <span class="text-[11px] font-medium tracking-[0.32em] uppercase text-mocha">
+            Verified Client Recognition
+          </span>
+          <h2 class="mt-3 font-serif text-4xl sm:text-5xl font-light text-espresso">
+            Love From Our Clients
+          </h2>
+
+          <!-- Rating Display -->
+          <div class="mt-10 flex flex-col items-center">
+            <div class="flex items-center space-x-1.5 text-champagne" aria-label="4.6 out of 5 stars">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="w-6 h-6 fill-current opacity-65" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+
+            <div class="mt-4 flex items-baseline justify-center space-x-3">
+              <span class="font-serif text-6xl sm:text-7xl text-espresso font-normal">4.6 / 5</span>
+            </div>
+            <p class="mt-2 text-xs font-medium tracking-[0.26em] uppercase text-mocha">
+              Based on 96 Google Reviews
+            </p>
+          </div>
+
+          <div class="mt-10">
+            <a
+              href="https://www.google.com/search?q=IMMAH%27S+Beauty+Lounge+Rawalpindi+reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center space-x-3 px-8 py-4 border border-espresso text-espresso text-xs font-semibold tracking-[0.22em] uppercase hover:bg-espresso hover:text-ivory transition-colors duration-300"
+            >
+              <span>View Google Reviews</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 9: INSTAGRAM SHOWCASE
+    ====================================================================== -->
+    <section class="py-24 md:py-32 bg-cream border-t border-espresso/10">
+      <div class="max-w-[1380px] mx-auto px-6 md:px-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 reveal">
+          <div class="space-y-3 max-w-xl">
+            <span class="text-[11px] font-medium tracking-[0.32em] uppercase text-champagne">
+              @immahbeautylounge
+            </span>
+            <h2 class="font-serif text-4xl sm:text-5xl font-light text-espresso">
+              Beauty Beyond the Ordinary
+            </h2>
+            <p class="text-base text-mocha font-light">
+              Follow our beauty journey and discover the latest moments from IMMAH'S Beauty Lounge.
+            </p>
+          </div>
+
+          <a
+            href="https://www.instagram.com/immahbeautylounge/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center px-8 py-4 bg-espresso text-ivory text-xs font-semibold tracking-[0.22em] uppercase hover:bg-champagne transition-colors duration-300 self-start md:self-auto"
+          >
+            Follow Us On Instagram
+          </a>
+        </div>
+
+        <!-- 4-Square Editorial Instagram Grid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 reveal">
+          <a href="https://www.instagram.com/immahbeautylounge/" target="_blank" rel="noopener noreferrer" class="group relative aspect-square overflow-hidden bg-white border border-espresso/10">
+            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=80" alt="Editorial soft glam makeup look" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-espresso/0 group-hover:bg-espresso/30 transition-colors flex items-center justify-center">
+              <span class="opacity-0 group-hover:opacity-100 text-white text-[11px] tracking-[0.24em] uppercase transition-opacity">@immahbeautylounge</span>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/immahbeautylounge/" target="_blank" rel="noopener noreferrer" class="group relative aspect-square overflow-hidden bg-white border border-espresso/10">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Bridal beauty elegance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-espresso/0 group-hover:bg-espresso/30 transition-colors flex items-center justify-center">
+              <span class="opacity-0 group-hover:opacity-100 text-white text-[11px] tracking-[0.24em] uppercase transition-opacity">@immahbeautylounge</span>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/immahbeautylounge/" target="_blank" rel="noopener noreferrer" class="group relative aspect-square overflow-hidden bg-white border border-espresso/10">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="Luxury facial skincare ritual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-espresso/0 group-hover:bg-espresso/30 transition-colors flex items-center justify-center">
+              <span class="opacity-0 group-hover:opacity-100 text-white text-[11px] tracking-[0.24em] uppercase transition-opacity">@immahbeautylounge</span>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/immahbeautylounge/" target="_blank" rel="noopener noreferrer" class="group relative aspect-square overflow-hidden bg-white border border-espresso/10">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80" alt="Refined manicure and nail artistry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-espresso/0 group-hover:bg-espresso/30 transition-colors flex items-center justify-center">
+              <span class="opacity-0 group-hover:opacity-100 text-white text-[11px] tracking-[0.24em] uppercase transition-opacity">@immahbeautylounge</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 10: CONTACT & LOCATION
+    ====================================================================== -->
+    <section id="contact" class="py-24 md:py-36 bg-ivory">
+      <div class="max-w-[1380px] mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto space-y-4 mb-16 reveal">
+          <span class="text-[11px] font-medium tracking-[0.32em] uppercase text-champagne">
+            Visit The Lounge
+          </span>
+          <h2 class="font-serif text-4xl sm:text-5xl lg:text-[56px] font-light text-espresso leading-tight">
+            Your Next Beauty Moment Starts Here.
+          </h2>
+        </div>
+
+        <!-- 3 Contact Info Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14 reveal">
+          <!-- Address -->
+          <div class="bg-white p-8 border border-espresso/10 space-y-3">
+            <p class="text-[10px] font-semibold tracking-[0.28em] uppercase text-champagne">Salon Address</p>
+            <h3 class="font-serif text-2xl text-espresso">Phase 7, Rawalpindi</h3>
+            <p class="text-sm text-mocha font-light leading-relaxed">
+              Wallayat Complex, Opp. China Center, Phase 7, Rawalpindi, 46000, Pakistan.
+            </p>
+          </div>
+
+          <!-- Phone -->
+          <div class="bg-white p-8 border border-espresso/10 space-y-3">
+            <p class="text-[10px] font-semibold tracking-[0.28em] uppercase text-champagne">Direct Telephone</p>
+            <h3 class="font-serif text-2xl text-espresso">
+              <a href="tel:+92515707144" class="hover:text-champagne transition-colors">0515707144</a>
+            </h3>
+            <p class="text-sm text-mocha font-light leading-relaxed">
+              Tap to call our reception desk for appointments and service enquiries.
+            </p>
+          </div>
+
+          <!-- Instagram -->
+          <div class="bg-white p-8 border border-espresso/10 space-y-3">
+            <p class="text-[10px] font-semibold tracking-[0.28em] uppercase text-champagne">Social Concierge</p>
+            <h3 class="font-serif text-2xl text-espresso">
+              <a href="https://www.instagram.com/immahbeautylounge/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne transition-colors">
+                @immahbeautylounge
+              </a>
+            </h3>
+            <p class="text-sm text-mocha font-light leading-relaxed">
+              Connect with us on Instagram for our latest bridal and beauty showcases.
+            </p>
+          </div>
+        </div>
+
+        <!-- Primary Booking Banner -->
+        <div class="bg-cream border border-champagne/40 p-10 sm:p-16 text-center space-y-6 reveal">
+          <p class="text-[11px] font-semibold tracking-[0.34em] uppercase text-mocha">
+            Ready For Your Beauty Experience?
+          </p>
+          <h3 class="font-serif text-3xl sm:text-5xl font-light text-espresso max-w-2xl mx-auto">
+            Reserve Your Time at IMMAH'S Beauty Lounge
+          </h3>
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button
+              type="button"
+              onclick="openBookingDrawer('Your Beauty Experience')"
+              class="w-full sm:w-auto px-10 py-4 bg-champagne text-white text-xs font-semibold tracking-[0.24em] uppercase hover:bg-espresso transition-colors duration-300 cursor-pointer"
+            >
+              Book Your Appointment
+            </button>
+            <a
+              href="tel:+92515707144"
+              class="w-full sm:w-auto px-10 py-4 border border-espresso/30 text-espresso text-xs font-semibold tracking-[0.24em] uppercase hover:border-espresso transition-colors duration-300"
+            >
+              Call 0515707144
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       SECTION 11: LUXURY DARK ESPRESSO FOOTER
+  ====================================================================== -->
+  <footer class="bg-espresso text-ivory pt-20 pb-12">
+    <div class="max-w-[1380px] mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-ivory/15">
+        <!-- Brand Column -->
+        <div class="md:col-span-5 space-y-5">
+          <div>
+            <p class="font-serif text-2xl tracking-[0.2em] uppercase text-ivory">IMMAH'S</p>
+            <p class="text-[10px] tracking-[0.34em] uppercase text-champagne">Beauty Lounge</p>
+          </div>
+          <p class="text-sm text-ivory/75 font-light leading-relaxed max-w-sm">
+            A luxury beauty destination in Phase 7, Rawalpindi dedicated to timeless elegance, personalized care, and refined beauty experiences.
+          </p>
+        </div>
+
+        <!-- Navigation Column -->
+        <div class="md:col-span-3 space-y-4">
+          <p class="text-[11px] font-semibold tracking-[0.26em] uppercase text-champagne">Explore</p>
+          <ul class="space-y-2.5 text-sm text-ivory/80 font-light">
+            <li><a href="#home" class="hover:text-champagne transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-champagne transition-colors">About</a></li>
+            <li><a href="#services" class="hover:text-champagne transition-colors">Services</a></li>
+            <li><a href="#gallery" class="hover:text-champagne transition-colors">Gallery</a></li>
+            <li><a href="#reviews" class="hover:text-champagne transition-colors">Reviews</a></li>
+            <li><a href="#contact" class="hover:text-champagne transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="md:col-span-4 space-y-4">
+          <p class="text-[11px] font-semibold tracking-[0.26em] uppercase text-champagne">Contact</p>
+          <p class="text-sm text-ivory/80 font-light leading-relaxed">
+            Wallayat Complex, Opp. China Center, Phase 7, Rawalpindi, 46000, Pakistan.
+          </p>
+          <p class="text-sm text-ivory/80 font-light">
+            Tel: <a href="tel:+92515707144" class="hover:text-champagne transition-colors">0515707144</a>
+          </p>
+          <p class="text-sm text-ivory/80 font-light">
+            Instagram:
+            <a href="https://www.instagram.com/immahbeautylounge/" target="_blank" rel="noopener noreferrer" class="hover:text-champagne transition-colors">
+              @immahbeautylounge
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-ivory/60 tracking-wider">
+        <p>© 2026 IMMAH'S Beauty Lounge. All Rights Reserved.</p>
+        <p class="uppercase tracking-[0.2em] text-[10px]">Phase 7 • Rawalpindi</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       APPOINTMENT CONCIERGE DRAWER (CONFIGURABLE PHONE / WHATSAPP)
+  ====================================================================== -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+    <div onclick="closeBookingDrawer()" class="fixed inset-0 bg-espresso/60 backdrop-blur-xs"></div>
+    <div class="fixed inset-y-0 right-0 w-full max-w-md bg-ivory p-8 sm:p-10 shadow-2xl overflow-y-auto flex flex-col justify-between border-l border-espresso/15">
+      <div class="space-y-8">
+        <div class="flex items-center justify-between border-b border-espresso/10 pb-5">
+          <div>
+            <p class="text-[10px] tracking-[0.3em] uppercase text-champagne">Appointment Concierge</p>
+            <h3 id="booking-title" class="font-serif text-3xl text-espresso mt-1">Plan Your Visit</h3>
+          </div>
+          <button
+            type="button"
+            onclick="closeBookingDrawer()"
+            aria-label="Close booking panel"
+            class="w-10 h-10 flex items-center justify-center border border-espresso/20 text-espresso hover:bg-espresso hover:text-ivory transition-colors cursor-pointer"
+          >
+            ✕
+          </button>
+        </div>
+
+        <p class="text-sm text-mocha font-light leading-relaxed">
+          Select your desired experience below to connect directly with <strong class="font-medium text-espresso">IMMAH'S Beauty Lounge</strong> reception to confirm timings and availability.
+        </p>
+
+        <!-- Service Selector -->
+        <div class="space-y-2">
+          <label for="booking-service-select" class="block text-[11px] font-semibold tracking-[0.22em] uppercase text-espresso">
+            Preferred Experience
+          </label>
+          <select
+            id="booking-service-select"
+            onchange="updateBookingSummary()"
+            class="w-full bg-white border border-espresso/20 px-4 py-3.5 text-sm text-espresso focus:outline-none focus:border-champagne"
+          >
+            <option value="General Appointment">General Appointment</option>
+            <option value="Hair Styling & Care">Hair Styling &amp; Care</option>
+            <option value="Makeup & Glam">Makeup &amp; Glam</option>
+            <option value="Skin Care & Facials">Skin Care &amp; Facials</option>
+            <option value="Nails & Manicure">Nails &amp; Manicure</option>
+            <option value="Bridal Beauty">Bridal Beauty</option>
+            <option value="Beauty Treatments">Beauty Treatments</option>
+          </select>
+        </div>
+
+        <!-- Prepared Enquiry Message -->
+        <div class="bg-cream p-5 border border-espresso/10 space-y-2">
+          <p class="text-[10px] font-semibold tracking-[0.24em] uppercase text-mocha">Enquiry Note</p>
+          <p id="booking-message-preview" class="text-xs text-espresso leading-relaxed italic"></p>
+        </div>
+
+        <!-- Direct Action Buttons -->
+        <div id="booking-actions" class="space-y-3 pt-2"></div>
+      </div>
+
+      <div class="pt-8 mt-8 border-t border-espresso/10 text-xs text-mocha space-y-1">
+        <p class="font-medium text-espresso">IMMAH'S Beauty Lounge</p>
+        <p>Wallayat Complex, Opp. China Center, Phase 7, Rawalpindi</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       FULL-SCREEN GALLERY LIGHTBOX (KEYBOARD ACCESSIBLE)
+  ====================================================================== -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-espresso/95 text-ivory flex items-center justify-center p-4 sm:p-10" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+    <button
+      type="button"
+      onclick="closeLightbox()"
+      aria-label="Close lightbox"
+      class="absolute top-6 right-6 w-12 h-12 border border-ivory/25 flex items-center justify-center text-ivory hover:border-champagne hover:text-champagne transition-colors cursor-pointer"
+    >
+      ✕
+    </button>
+
+    <button
+      type="button"
+      onclick="stepLightbox(-1)"
+      aria-label="Previous image"
+      class="absolute left-4 sm:left-8 w-12 h-12 border border-ivory/25 flex items-center justify-center text-ivory hover:border-champagne hover:text-champagne transition-colors cursor-pointer"
+    >
+      ←
+    </button>
+
+    <div class="max-w-4xl max-h-[85vh] flex flex-col items-center">
+      <img id="lightbox-img" src="" alt="" class="max-h-[72vh] w-auto object-contain border border-ivory/15" />
+      <div class="mt-4 text-center">
+        <p id="lightbox-category" class="text-[10px] tracking-[0.3em] uppercase text-champagne"></p>
+        <p id="lightbox-caption" class="font-serif text-xl sm:text-2xl text-ivory mt-1"></p>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      onclick="stepLightbox(1)"
+      aria-label="Next image"
+      class="absolute right-4 sm:right-8 w-12 h-12 border border-ivory/25 flex items-center justify-center text-ivory hover:border-champagne hover:text-champagne transition-colors cursor-pointer"
+    >
+      →
+    </button>
+  </div>
+
+  <!-- =====================================================================
+       EDITABLE SALON DATA & INTERACTIVE SCRIPTS
+  ====================================================================== -->
+  <script>
+    /**
+     * EASY-TO-EDIT SALON CONFIGURATION
+     * Replace image URLs with your actual salon photography anytime.
+     * To enable WhatsApp booking later, set whatsappConfirmed: true and enter your mobile number in international format (e.g., "923001234567").
+     */
+    const SALON_CONFIG = {
+      name: "IMMAH'S Beauty Lounge",
+      landlineDisplay: "0515707144",
+      landlineHref: "tel:+92515707144",
+      whatsappConfirmed: false,
+      whatsappNumber: "",
+      instagramUrl: "https://www.instagram.com/immahbeautylounge/",
+      services: [
+        {
+          number: "01",
+          title: "Hair Styling & Care",
+          description: "Bespoke styling, nourishing rituals, and precision hair artistry tailored to enhance your natural movement and shine.",
+          image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80",
+          alt: "Luxury hair styling and care at IMMAH'S Beauty Lounge"
+        },
+        {
+          number: "02",
+          title: "Makeup & Glam",
+          description: "Luminous editorial finishes and timeless evening glamour crafted to accentuate your individual features.",
+          image: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=80",
+          alt: "Sophisticated makeup artistry at IMMAH'S Beauty Lounge"
+        },
+        {
+          number: "03",
+          title: "Skin Care & Facials",
+          description: "Restorative facial experiences designed to refresh, hydrate, and illuminate your complexion in serene comfort.",
+          image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80",
+          alt: "Rejuvenating skincare and facial treatment"
+        },
+        {
+          number: "04",
+          title: "Nails & Manicure",
+          description: "Refined hand care and immaculate nail artistry finished in understated, contemporary tones.",
+          image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80",
+          alt: "Minimalist luxury manicure and nail artistry"
+        },
+        {
+          number: "05",
+          title: "Bridal Beauty",
+          description: "Dedicated bridal preparation uniting grace, poise, and radiant artistry for your most unforgettable celebration.",
+          image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80",
+          alt: "Timeless bridal beauty preparation"
+        },
+        {
+          number: "06",
+          title: "Beauty Treatments",
+          description: "Thoughtful self-care rituals delivered with meticulous attention to detail for complete renewal.",
+          image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80",
+          alt: "Serene beauty lounge treatment experience"
+        }
+      ],
+      gallery: [
+        {
+          src: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80",
+          category: "Salon Interior",
+          caption: "Warm Ivory & Champagne Lounge Sanctuary"
+        },
+        {
+          src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80",
+          category: "Makeup",
+          caption: "Effortless Editorial Radiance"
+        },
+        {
+          src: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80",
+          category: "Bridal",
+          caption: "Timeless Bridal Poise"
+        },
+        {
+          src: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1000&q=80",
+          category: "Hair",
+          caption: "Silk & Movement Hair Artistry"
+        },
+        {
+          src: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1000&q=80",
+          category: "Skincare",
+          caption: "Luminous Complexion Ritual"
+        },
+        {
+          src: "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=80",
+          category: "Nails",
+          caption: "Refined Neutral Manicure"
+        }
+      ]
+    };
+
+    // Render Services
+    function renderServices() {
+      const grid = document.getElementById("services-grid");
+      grid.innerHTML = SALON_CONFIG.services.map((service) => `
+        <article class="group bg-white border border-espresso/10 flex flex-col justify-between transition-all duration-500 hover:border-champagne/70 reveal visible">
+          <div>
+            <div class="overflow-hidden aspect-[4/3] bg-ivory relative">
+              <img
+                src="${service.image}"
+                alt="${service.alt}"
+                loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <span class="absolute top-4 left-4 bg-ivory/95 px-3 py-1 text-[10px] tracking-[0.26em] uppercase text-espresso border border-espresso/10">
+                ${service.number}
+              </span>
+            </div>
+            <div class="p-8 space-y-3">
+              <h3 class="font-serif text-2xl sm:text-3xl text-espresso font-normal group-hover:text-mocha transition-colors">
+                ${service.title}
+              </h3>
+              <p class="text-sm text-mocha font-light leading-relaxed">
+                ${service.description}
+              </p>
+            </div>
+          </div>
+
+          <div class="px-8 pb-8 pt-2">
+            <button
+              type="button"
+              onclick="openBookingDrawer('${service.title.replace(/'/g, "\\'")}')"
+              class="w-full py-3.5 border border-espresso/25 text-espresso text-[11px] font-semibold tracking-[0.22em] uppercase hover:bg-champagne hover:border-champagne hover:text-white transition-all duration-300 cursor-pointer"
+            >
+              Book Now
+            </button>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    // Gallery & Lightbox State
+    let activeCategory = "All";
+    let filteredGallery = [...SALON_CONFIG.gallery];
+    let currentLightboxIndex = 0;
+
+    function renderGalleryFilters() {
+      const categories = ["All", ...new Set(SALON_CONFIG.gallery.map((item) => item.category))];
+      const container = document.getElementById("gallery-filters");
+      container.innerHTML = categories.map((cat) => `
+        <button
+          type="button"
+          onclick="setGalleryCategory('${cat}')"
+          class="px-4 py-2 text-[11px] tracking-[0.2em] uppercase border transition-colors cursor-pointer ${
+            activeCategory === cat
+              ? "bg-espresso text-ivory border-espresso"
+              : "bg-white text-mocha border-espresso/15 hover:border-champagne"
+          }"
+        >
+          ${cat}
+        </button>
+      `).join("");
+    }
+
+    function setGalleryCategory(cat) {
+      activeCategory = cat;
+      filteredGallery = cat === "All"
+        ? [...SALON_CONFIG.gallery]
+        : SALON_CONFIG.gallery.filter((item) => item.category === cat);
+      renderGalleryFilters();
+      renderGallery();
+    }
+
+    function renderGallery() {
+      const masonry = document.getElementById("gallery-masonry");
+      masonry.innerHTML = filteredGallery.map((item, idx) => `
+        <figure
+          onclick="openLightbox(${idx})"
+          tabindex="0"
+          role="button"
+          aria-label="Open ${item.caption} in full screen"
+          onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(${idx});}"
+          class="break-inside-avoid group relative overflow-hidden bg-white border border-espresso/10 cursor-pointer"
+        >
+          <img
+            src="${item.src}"
+            alt="${item.caption}"
+            loading="lazy"
+            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+          />
+          <figcaption class="p-4 bg-white flex items-center justify-between border-t border-espresso/10">
+            <div>
+              <span class="block text-[9px] tracking-[0.26em] uppercase text-champagne">${item.category}</span>
+              <span class="font-serif text-lg text-espresso">${item.caption}</span>
+            </div>
+            <span class="text-xs text-mocha group-hover:text-champagne transition-colors">Expand ↗</span>
+          </figcaption>
+        </figure>
+      `).join("");
+    }
+
+    function openLightbox(index) {
+      currentLightboxIndex = index;
+      updateLightboxView();
+      document.getElementById("lightbox-modal").classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox-modal").classList.add("hidden");
+      document.body.style.overflow = "";
+    }
+
+    function stepLightbox(dir) {
+      currentLightboxIndex = (currentLightboxIndex + dir + filteredGallery.length) % filteredGallery.length;
+      updateLightboxView();
+    }
+
+    function updateLightboxView() {
+      const item = filteredGallery[currentLightboxIndex];
+      document.getElementById("lightbox-img").src = item.src;
+      document.getElementById("lightbox-img").alt = item.caption;
+      document.getElementById("lightbox-category").textContent = item.category;
+      document.getElementById("lightbox-caption").textContent = item.caption;
+    }
+
+    // Booking Drawer Logic (Honest Landline Fallback + Configurable WhatsApp)
+    function openBookingDrawer(serviceName) {
+      const select = document.getElementById("booking-service-select");
+      const matchingOption = Array.from(select.options).find((opt) => opt.value === serviceName);
+      select.value = matchingOption ? serviceName : "General Appointment";
+      updateBookingSummary();
+      document.getElementById("booking-modal").classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeBookingDrawer() {
+      document.getElementById("booking-modal").classList.add("hidden");
+      document.body.style.overflow = "";
+    }
+
+    function updateBookingSummary() {
+      const selectedService = document.getElementById("booking-service-select").value;
+      const baseMessage = "Hello IMMAH'S Beauty Lounge! I would like to book an appointment. Please share your available timings and services.";
+      const fullMessage = selectedService !== "General Appointment"
+        ? `Hello IMMAH'S Beauty Lounge! I would like to book an appointment for ${selectedService}. Please share your available timings and services.`
+        : baseMessage;
+
+      document.getElementById("booking-message-preview").textContent = `"${fullMessage}"`;
+
+      const actionsContainer = document.getElementById("booking-actions");
+      if (SALON_CONFIG.whatsappConfirmed && SALON_CONFIG.whatsappNumber) {
+        const waUrl = `https://wa.me/${SALON_CONFIG.whatsappNumber}?text=${encodeURIComponent(fullMessage)}`;
+        actionsContainer.innerHTML = `
+          <a
+            href="${waUrl}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center w-full py-4 bg-champagne text-white text-xs font-semibold tracking-[0.22em] uppercase hover:bg-espresso transition-colors"
+          >
+            Continue on WhatsApp
+          </a>
+          <a
+            href="${SALON_CONFIG.landlineHref}"
+            class="flex items-center justify-center w-full py-4 border border-espresso/25 text-espresso text-xs font-semibold tracking-[0.22em] uppercase hover:border-espresso transition-colors"
+          >
+            Call ${SALON_CONFIG.landlineDisplay}
+          </a>
+        `;
+      } else {
+        actionsContainer.innerHTML = `
+          <a
+            href="${SALON_CONFIG.landlineHref}"
+            class="flex items-center justify-center w-full py-4 bg-champagne text-white text-xs font-semibold tracking-[0.22em] uppercase hover:bg-espresso transition-colors"
+          >
+            Call Reception (${SALON_CONFIG.landlineDisplay})
+          </a>
+          <a
+            href="${SALON_CONFIG.instagramUrl}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center w-full py-4 border border-espresso/25 text-espresso text-xs font-semibold tracking-[0.22em] uppercase hover:border-espresso transition-colors"
+          >
+            Message on Instagram
+          </a>
+        `;
+      }
+    }
+
+    // Sticky Navbar & Mobile Menu
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 36) {
+        navbar.classList.add("bg-ivory/95", "backdrop-blur-md", "border-espresso/10", "shadow-xs");
+        navbar.classList.remove("bg-transparent", "border-transparent");
+      } else {
+        navbar.classList.remove("bg-ivory/95", "backdrop-blur-md", "border-espresso/10", "shadow-xs");
+        navbar.classList.add("bg-transparent", "border-transparent");
+      }
+    });
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobile-menu");
+      const btn = document.getElementById("mobile-menu-btn");
+      const isOpen = !menu.classList.contains("hidden");
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        menu.classList.remove("hidden");
+        btn.setAttribute("aria-expanded", "true");
+        document.getElementById("bar-1").classList.add("translate-y-[7.5px]", "rotate-45");
+        document.getElementById("bar-2").classList.add("opacity-0");
+        document.getElementById("bar-3").classList.add("-translate-y-[7.5px]", "-rotate-45");
+      }
+    }
+
+    function closeMobileMenu() {
+      const menu = document.getElementById("mobile-menu");
+      const btn = document.getElementById("mobile-menu-btn");
+      menu.classList.add("hidden");
+      btn.setAttribute("aria-expanded", "false");
+      document.getElementById("bar-1").classList.remove("translate-y-[7.5px]", "rotate-45");
+      document.getElementById("bar-2").classList.remove("opacity-0");
+      document.getElementById("bar-3").classList.remove("-translate-y-[7.5px]", "-rotate-45");
+    }
+
+    // Keyboard Accessibility (Escape & Arrow Keys)
+    document.addEventListener("keydown", (e) => {
+      const lightboxOpen = !document.getElementById("lightbox-modal").classList.contains("hidden");
+      const bookingOpen = !document.getElementById("booking-modal").classList.contains("hidden");
+      if (e.key === "Escape") {
+        if (lightboxOpen) closeLightbox();
+        if (bookingOpen) closeBookingDrawer();
+      } else if (lightboxOpen && e.key === "ArrowRight") {
+        stepLightbox(1);
+      } else if (lightboxOpen && e.key === "ArrowLeft") {
+        stepLightbox(-1);
+      }
+    });
+
+    // Scroll-Triggered Section Reveals
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    // Initialize Page
+    renderServices();
+    renderGalleryFilters();
+    renderGallery();
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
